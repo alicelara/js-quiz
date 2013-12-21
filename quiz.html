@@ -1,0 +1,55 @@
+<! DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	.show {
+		display:block;
+	}
+
+	.hide {
+		display:none;
+	}
+	</style>
+</head>
+<body>
+	<form id="quiz1">
+		<fieldset id="question1" class="show">
+			<legend>QUESTION 1 - Which color do you like more?</legend>
+			<input type="radio" name="question1" id="red" value="color-red" checked>
+			<label for="red">Red</label>
+			<input type="radio" name="question1" id="blue" value="color-blue" >
+			<label for="blue">blue</label>
+			<input type="radio" name="question1" id="yellow" value="color-yellow" >
+			<label for="yellow">yellow</label>
+			<input type="submit" id="submit" />
+		</fieldset>	
+	</form>
+	<form id="quiz2">
+		<fieldset id="question2" class="hide">
+			<legend>QUESTION 2 - Which color do you like less?</legend>
+			<input type="radio" name="question2" id="pink" value="color-pink" checked>
+			<label for="pink">pink</label>
+			<input type="radio" name="question2" id="grey" value="color-grey">
+			<label for="grey">grey</label>
+			<input type="radio" name="question2" id="black" value="color-black">
+			<label for="black">black</label>
+			<input type="submit" id="submit" />
+		</fieldset>	
+	</form>
+	<form id="quiz3">
+		<fieldset id="question3" class="hide">
+			<legend>QUESTION 3 - Which city do you like more?</legend>
+			<input type="radio" name="question3" id="vanchuver" value="van" checked>
+			<label for="vanchuver">vanchuver</label>
+			<input type="radio" name="question3" id="torontrevas" value="to">
+			<label for="torontrevas">torontrevas</label>
+			<input type="radio" name="question3" id="bras-ilha" value="bsb">
+			<label for="bras-ilha">bras-ilha</label>
+			<input type="submit" id="submit" />
+		</fieldset>	
+	</form>
+	<div id="result" class="hide"> Congrats!</div>
+	<script type="text/javascript" src="quiz.js"></script>
+</body>
+</html>
