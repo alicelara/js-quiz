@@ -10,18 +10,36 @@
 	.hide {
 		display:none;
 	}
+	fieldset, #result {
+		position:relative;
+		width: 400px;
+		font-family: arial;
+		border-color: white;
+		margin: 50px auto;
+		padding: 40px;
+		text-align: center;
+	}
+	input[type="submit"] {
+		background-color: #0FB68E;
+		border: none;
+		border-radius: 3px;
+		padding: 10px 15px;
+		color: #ffffff;
+		position: relative;
+		top: 20px;
+	}
 	</style>
 </head>
 <body>
 	<form id="quiz1">
 		<fieldset id="question1" class="show">
-			<legend>QUESTION 1 - Which color do you like more?</legend>
+			<legend>QUESTION 1 - Which color do you prefer?</legend>
 			<input type="radio" name="question1" id="red" value="color-red" checked>
 			<label for="red">Red</label>
 			<input type="radio" name="question1" id="blue" value="color-blue" >
 			<label for="blue">blue</label>
 			<input type="radio" name="question1" id="yellow" value="color-yellow" >
-			<label for="yellow">yellow</label>
+			<label for="yellow">yellow</label><br>
 			<input type="submit" id="submit" />
 		</fieldset>	
 	</form>
@@ -33,19 +51,19 @@
 			<input type="radio" name="question2" id="grey" value="color-grey">
 			<label for="grey">grey</label>
 			<input type="radio" name="question2" id="black" value="color-black">
-			<label for="black">black</label>
+			<label for="black">black</label><br>
 			<input type="submit" id="submit" />
 		</fieldset>	
 	</form>
 	<form id="quiz3">
 		<fieldset id="question3" class="hide">
 			<legend>QUESTION 3 - Which city do you like more?</legend>
-			<input type="radio" name="question3" id="vanchuver" value="van" checked>
-			<label for="vanchuver">vanchuver</label>
-			<input type="radio" name="question3" id="torontrevas" value="to">
-			<label for="torontrevas">torontrevas</label>
-			<input type="radio" name="question3" id="bras-ilha" value="bsb">
-			<label for="bras-ilha">bras-ilha</label>
+			<input type="radio" name="question3" id="vancouver" value="van" checked>
+			<label for="vancouver">vancouver</label>
+			<input type="radio" name="question3" id="toronto" value="to">
+			<label for="toronto">toronto</label>
+			<input type="radio" name="question3" id="brasilia" value="bsb">
+			<label for="brasilia">brasilia</label><br>
 			<input type="submit" id="submit" />
 		</fieldset>	
 	</form>
